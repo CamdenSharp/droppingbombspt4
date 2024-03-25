@@ -362,6 +362,7 @@
 "Assets/Scripts/Score.cs"
 "Assets/Scripts/Teleport.cs"
 "Assets/Spawner.cs"
+"Assets/TriggerExplosion.cs"
 -langversion:9.0
 
 /deterministic
