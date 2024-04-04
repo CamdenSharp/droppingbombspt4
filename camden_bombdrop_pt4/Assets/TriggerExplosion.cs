@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerExplosion : MonoBehaviour
 {
-    [Header("ExplosionParts")]
+    [Header("Explosion Parts")]
     public GameObject explosion;
 
     private void OnCollisionEnter(Collision collision)

@@ -354,6 +354,7 @@
 "Assets/Scripts/Boundaries.cs"
 "Assets/Scripts/CollectibleAttribute.cs"
 "Assets/Scripts/DestroyAfterTime.cs"
+"Assets/Scripts/ExplosionClear.cs"
 "Assets/Scripts/FallingLeaves.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Movement.cs"

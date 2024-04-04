@@ -1869,6 +1869,22 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1464841459427338303, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468728439778924801, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468728439778924801, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468728439778924801, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2468728439778924801, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
       value: 2
@@ -1976,6 +1992,10 @@ PrefabInstance:
     - target: {fileID: 4910930064998873150, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364973181083891834, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4231a01298be5da4ba5c83f5c1d38c21, type: 3}
