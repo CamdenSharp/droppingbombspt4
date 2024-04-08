@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public int pointsWorth = 1;
     private int score;
     private bool smokeCleared = true;
+    private int bestScore = 0;
+    public Text BestScoreText;
+    private bool beatBestScore;
 
     void Awake()
     {
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         player = playerPrefab;
         scoreText.enabled = false;
+        BestScoreText.enabled = false;
     }
 
     // Start is called before the first frame update
@@ -32,6 +36,8 @@ public class GameManager : MonoBehaviour
         spawner.active = false;
         title.SetActive(true);
         splash.SetActive(false);
+        bestScore = PlayerPrefs.GetInt("BestScore");
+        BestScoreText.text = "BestScore : " + bestScore.ToString();
     }
 
     // Update is called once per frame
@@ -89,7 +95,7 @@ public class GameManager : MonoBehaviour
         score = scoreSystem.GetComponent<Score>().score;
     }
 
-    void SlashScreen()
+    void SplashScreen()
     {
         smokeCleared = true;
         splash.SetActive(true);
