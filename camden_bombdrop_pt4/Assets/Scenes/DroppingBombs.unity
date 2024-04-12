@@ -158,7 +158,7 @@ MonoBehaviour:
   scoreSystem: {fileID: 1155036323}
   scoreText: {fileID: 664618975}
   pointsWorth: 1
-  BestScoreText: {fileID: 0}
+  bestScoreText: {fileID: 1074811593}
 --- !u!4 &76769248
 Transform:
   m_ObjectHideFlags: 0
@@ -1152,7 +1152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Best Score :'
+  m_Text: 'Best Score: 0'
 --- !u!222 &1074811594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1926,6 +1926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
