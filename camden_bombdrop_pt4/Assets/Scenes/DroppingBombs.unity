@@ -158,6 +158,7 @@ MonoBehaviour:
   scoreSystem: {fileID: 1155036323}
   scoreText: {fileID: 664618975}
   pointsWorth: 1
+  bestScore: 0
   bestScoreText: {fileID: 1074811593}
 --- !u!4 &76769248
 Transform:
@@ -582,7 +583,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score :'
+  m_Text: 'Score:'
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,7 +1153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Best Score: 0'
+  m_Text: 'Best Score:'
 --- !u!222 &1074811594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1320,6 +1321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 664618975}
+  bestScore: 0
+  bestScoreText: {fileID: 1074811593}
 --- !u!1 &1197274319
 GameObject:
   m_ObjectHideFlags: 0

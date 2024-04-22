@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
     public int pointsWorth = 1;
     private int score;
     private bool smokeCleared = true;
-    private int bestScore = 0;
+    public int bestScore;
     public Text bestScoreText;
-    private bool beatBestScore;
+    //private bool beatBestScore;
 
     void Awake()
     {
@@ -85,8 +85,7 @@ public class GameManager : MonoBehaviour
         scoreText.enabled = true;
         scoreSystem.GetComponent<Score>().score = 0;
         scoreSystem.GetComponent<Score>().Start();
-
-        beatBestScore = false;
+        //beatBestScore = false;
         bestScoreText.enabled = true;
     }
 
@@ -96,13 +95,13 @@ public class GameManager : MonoBehaviour
         gameStarted = false;
         Invoke("SplashScreen", 2f);
         score = scoreSystem.GetComponent<Score>().score;
-        if (score > bestScore)
+        PlayerPrefs.SetInt("BestScore", bestScore);
+        //if (score > bestScore)
         {
-            bestScore = score;
-            PlayerPrefs.SetInt("BestScore", bestScore);
-            PlayerPrefs.Save();
-            beatBestScore = true;
-            bestScoreText.text = "Best Score: " + bestScore.ToString();
+           // bestScore = score;
+           // PlayerPrefs.SetInt("BestScore", bestScore);
+           // beatBestScore = true;
+           // bestScoreText.text = "Best Score: " + bestScore.ToString();
         }
     }
 
